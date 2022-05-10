@@ -1,0 +1,12 @@
+<li class="todo">
+  <input (click)="toggle(item)" type="checkbox" [checked]="item.checked" />
+  <div [ngClass]="item.checked ? 'checked' : ''">{{ item.title }}</div>
+  <div class="btn-group">
+    <button (click)="edit(item)" type="button" class="btn btn-success">
+      Edit
+    </button>
+    <button (click)="delete(item)" type="button" class="btn btn-danger">
+      Delete
+    </button>
+  </div>
+</li>

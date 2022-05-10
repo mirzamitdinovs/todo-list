@@ -1,0 +1,6 @@
+<div class="d-flex mt-4">
+  <input type="text" class="form-control" [formControl]="title" />
+  <button (click)="add(title.value)" type="button" class="btn btn-info">
+    {{ isSelected ? "Edit" : "Add" }}
+  </button>
+</div>
